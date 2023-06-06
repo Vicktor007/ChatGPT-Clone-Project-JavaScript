@@ -58,7 +58,7 @@ const getChatResponse = async (incomingChatDiv) => {
         pElement.textContent = response.choices[0].text.trim();
     } catch (error) { // Add error class to the paragraph element and set error text
         pElement.classList.add("error");
-        pElement.textContent = "Oops! Something went wrong while retrieving the response. Please try again.";
+        pElement.textContent = "The API key has been deleted due to privacy concern. give us a few moments to rectify the situation.";
     }
 
     // Remove the typing animation, append the paragraph element and save the chats to local storage
